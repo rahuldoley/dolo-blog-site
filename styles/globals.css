@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.blog-title {
+  font-family: 'Benne';
+  font-size: 40px;
+  line-height: 80%;
+  padding-bottom: 10px;
+}
+
+.blog-description {
+  font-family: 'Lato';
+  font-size: 18px;
+  color: #4d4c4c
+}
+
+.blog-content {
+  font-family: 'Benne';
+}
+
+.title-slug {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: black;
+}
