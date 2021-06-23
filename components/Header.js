@@ -30,16 +30,16 @@ export default function Header() {
                 <div className="hidden md:block ">
                     <ul className="flex space-x-2 ">
                         <NavItem  href="/" text="Home" />
-                        <NavItem href="/about" text="About" />
-                        <NavItem href="/blog" text="Blog" />
-                        <NavItem href="/faq" text="FAQ" />
+                        <NavItem href="/" text="About" />
+                        <NavItem href="/" text="Blog" />
+                        <NavItem href="/" text="FAQ" />
                     </ul>
                 </div>
                 <button 
                     type="submit" 
                     className="hidden md:block bg-blue-900 text-white text-xs p-3 rounded-3xl">Sign In 
                 </button>                           
-                <button type="button" className="block lg:hidden ml-24 md:ml-24" onClick={handleClick}>
+                <button type="button" className="block md:hidden ml-24 md:ml-24" onClick={handleClick}>
                     <svg className="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                         {isOpen && (
                         <path fillRule="evenodd" clipRule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z" />
@@ -54,8 +54,8 @@ export default function Header() {
                 <div className="md:block lg:hidden">
                     <ul className={`flex flex-col items-center justify-center space-x-2 p-2 ${  isOpen ? "block" : "hidden" }`}>
                         <NavItem  href="/" text="Home" />
-                        <NavItem href="/about" text="About" />
-                        <NavItem href="/blog" text="Blog" />
+                        <NavItem href="/" text="About" />
+                        <NavItem href="/" text="Blog" />
                         <button 
                             type="submit" 
                             className={`bg-blue-900 text-white text-xs mt-4 p-3 rounded-3xl` } >Sign In 
